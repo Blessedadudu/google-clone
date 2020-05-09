@@ -2,6 +2,7 @@
     background-color: #ffffff;
     position: fixed;
     box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+    z-index: 4;
 
     h1 {
         color: rgb(34, 32, 32)
@@ -45,7 +46,7 @@
         align-items: center;
 
         p {
-            color: rgba(0, 0, 0, 0.76);
+            color: rgba(0, 0, 0, 0.514);
             padding-right: 2rem;
             cursor: pointer;
 
@@ -68,12 +69,80 @@
             font-weight: 500;
             letter-spacing: .75px;
 
+            &:last-child {
+                display: none;
+            }
 
             &:hover {
                 background-color: #1155ad;
             }
 
         }
+
+        .createHide2 {
+            display: none;    
+        }
     }
 }
 
+.nav--media {
+    background-color: #ffffff;
+    position: fixed;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
+    z-index: 1;
+
+
+    div {
+        width: 100vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 4.5rem 1rem 1rem 2rem;
+
+    }
+
+    p {
+        color: rgba(0, 0, 0, 0.514);
+        cursor: pointer;
+        transition: all .3s linear;  // add sass variable
+
+        &:hover {
+            color: black;
+        }
+
+
+    }
+}
+
+.nav--media {
+    display: none
+}
+
+
+@media only screen and (max-width: 900px){
+
+    .nav--body {
+        .nav--create {
+            p {
+                display: none;
+            }
+
+            .createHide {
+                display: none;
+            }
+
+            h5 {
+                padding: .7rem 1.7rem;
+                &:last-child {
+                    display: inline-block;
+                }
+            }
+
+        }
+        
+    }
+
+    .nav--media {
+        display: block
+    }
+}

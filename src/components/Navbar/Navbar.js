@@ -4,6 +4,7 @@ import gmailLogo from '../../assets/logo-gmail.png';
 
 const Navbar = () => {
     return (
+        <>
         <nav className='nav'>
             <div className='nav--body'>
                 <div className='nav--logo'>
@@ -13,12 +14,22 @@ const Navbar = () => {
                 <div class='nav--create'>
                    <p>For Work</p> 
                    <p>Sign in</p>
-                   <h5>Create an account</h5>
+                   <h5 className='createHide'>Create an account</h5>
+                   <h5>Get Gmail</h5>
+
                 </div>
                 
 
             </div>
         </nav>
+        <div className='nav--media'>
+            <div>
+              <p>For Work</p> 
+              <p>Sign in</p>  
+            </div>
+            
+        </div>
+        </>
     )
 }
 
