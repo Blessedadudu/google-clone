@@ -1,10 +1,12 @@
 .nav {
     background-color: #ffffff;
     position: fixed;
+    box-shadow: 0 2px 6px 0 rgba(0,0,0,.12), inset 0 -1px 0 0 #dadce0;
 
     h1 {
         color: rgb(34, 32, 32)
     }
+
 
 }
 
@@ -12,12 +14,12 @@
 
 .nav--body {
     width: 100vw;
-    padding: 1rem;
+    padding: .5rem;
     // color: red;
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-between;  // add sass variable
     align-items: center;
+    padding-left: 2rem;
 
 
     .nav--logo {
@@ -37,15 +39,39 @@
     }
 
     .nav--create {
-        width: 25%;
+        // width: 50%;
         display: flex;
         justify-content: space-around;
         align-items: center;
 
+        p {
+            color: rgba(0, 0, 0, 0.76);
+            padding-right: 2rem;
+            cursor: pointer;
+
+            &:hover {
+                color: black;
+                transition: all .3s linear;  // add sass variable
+            }
+
+
+        }
+
         h5 {
             background-color: #1a73e8;
             padding: 1rem 2rem;
-            color: white
+            border-radius: 4px;
+            color: white;
+            transition: all .3s linear;  // add sass variable
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .75px;
+
+
+            &:hover {
+                background-color: #1155ad;
+            }
 
         }
     }
