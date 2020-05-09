@@ -1,10 +1,18 @@
 .nav {
     background-color: rgba(235, 34, 34, 0.466);
-    max-width: 80vw;
+    position: fixed;
 
     h1 {
         color: rgb(34, 32, 32)
     }
 
+}
+
+.nav--body {
+    width: 100vw;
+    padding: 1rem;
+    color: red;
+    display: flex;
+    justify-content: space-between;
 }
 
