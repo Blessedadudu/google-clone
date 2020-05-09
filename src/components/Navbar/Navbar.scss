@@ -1,5 +1,5 @@
 .nav {
-    background-color: rgba(235, 34, 34, 0.466);
+    background-color: #ffffff;
     position: fixed;
 
     h1 {
@@ -8,11 +8,46 @@
 
 }
 
+// * {-webkit-font-smoothing: antialiased;}
+
 .nav--body {
     width: 100vw;
     padding: 1rem;
-    color: red;
+    // color: red;
     display: flex;
     justify-content: space-between;
+
+    align-items: center;
+
+
+    .nav--logo {
+        display: flex;
+        align-items: center;
+
+        img {
+            height: 30px;
+            width: 40px;
+        }
+
+        p {
+            padding-left: .5rem;
+            font-size: 25px;
+            color: rgba(0, 0, 0, 0.726)
+        }
+    }
+
+    .nav--create {
+        width: 25%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        h5 {
+            background-color: #1a73e8;
+            padding: 1rem 2rem;
+            color: white
+
+        }
+    }
 }
 
