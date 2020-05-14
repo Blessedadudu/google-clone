@@ -1,0 +1,30 @@
+.slider {
+    border: 1px solid red;
+    width: 100%;
+    height: 30vh; 
+    display: flex;
+    position: relative;
+}
+
+.slide {
+    border:  2px solid gold;
+    min-width: 100%;
+    height: 30vh;
+}
+
+%btn-styles {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5%;
+}
+
+#goLeft {
+    left: 0;
+    @extend %btn-styles
+}
+
+#goRight {
+    right: 0;
+    @extend %btn-styles 
+}

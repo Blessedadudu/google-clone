@@ -11,7 +11,7 @@ const Navbar = () => {
                     <img src={gmailLogo} alt='the gmail logo' />
                     <p>Gmail</p>
                 </div>
-                <div class='nav--create'>
+                <div className='nav--create'>
                    <p>For Work</p> 
                    <p>Sign in</p>
                    <h5 className='createHide'>Create an account</h5>
