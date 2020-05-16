@@ -42,9 +42,16 @@ const CarouselHeader = () => {
             <input type="radio" id="i2" name="images" />
             <input type="radio" id="i3" name="images" />	
             
-            <div className="slide_img" id="one">			
+            <div className="slide_img" id="one">
+                    <div>
+                       <img src={carousel1} alt='caroimage'/>
+                        <div>
+                            <h1>{carouselInfo[0].heading}</h1>
+                            <h6>{carouselInfo[0].little}</h6>
+                            <button>{carouselInfo[0].button}</button>
+                        </div> 
+                    </div>			   
                     
-                    <img src={carousel1} alt='caroimage'/>
                     
                         <label className="prev" htmlFor="i3"><span>&#x2039;</span></label>
                         <label className="next" htmlFor="i2"><span>&#x203a;</span></label>	
@@ -52,22 +59,33 @@ const CarouselHeader = () => {
             </div>
             
             <div className="slide_img" id="two">
-                
-                    <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg" alt='caroimge' />
-                    
-                        <label className="prev" htmlFor="i1"><span>&#x2039;</span></label>
-                        <label className="next" htmlFor="i3"><span>&#x203a;</span></label>
-                
+                <div>
+                    <img src={carousel2} alt='caroimage'/>
+                    <div>
+                        <h1>{carouselInfo[1].heading}</h1>
+                        <h6>{carouselInfo[1].little}</h6>
+                        <button>{carouselInfo[1].button}</button>
+                    </div> 
+                </div>   
+                <label className="prev" htmlFor="i1"><span>&#x2039;</span></label>
+                <label className="next" htmlFor="i3"><span>&#x203a;</span></label>
             </div>
                     
             <div className="slide_img" id="three">
-                    <img src='http://wallpaperswide.com/download/up_house-wallpaper-1280x800.jp' alt='carouimage' />	
+                <div>
+                    <img src={carousel3} alt='caroimage'/>
+                    <div>
+                        <h1>{carouselInfo[2].heading}</h1>
+                        <h6>{carouselInfo[2].little}</h6>
+                        <button>{carouselInfo[2].button}</button>
+                    </div> 
+                </div>	
                     
                         <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
                         <label className="next" htmlFor="i1"><span>&#x203a;</span></label>
             </div>
 
-            <div id="nav_slide">
+            <div className="nav_slide">
                 <label htmlFor="i1" className="dots" id="dot1"></label>
                 <label htmlFor="i2" className="dots" id="dot2"></label>
                 <label htmlFor="i3" className="dots" id="dot3"></label>
@@ -75,49 +93,6 @@ const CarouselHeader = () => {
                 
         </div>
     )
-        
-
-
-
-    
-
-    // const [x, setX] = useState(0);
-    
-    // let goLeft = () => {
-    //     setX(x + 100)
-    //     // x === 0 ? setX( -100 * (carouselInfo.length -1) ) : setX(x + 100)
-    // }
-
-    // let goRight = () => {
-    //     setX( x - 100 )
-    //     // x === -100 * ( carouselInfo.length -1 ) ? setX(0) : setX(x - 100)
-    // }
-
-
-    // return (
-    //     <div classNameName='slider'>
-    //         { 
-    //             carouselInfo.map((items, id) => {
-    //               return (
-    //                 <div key={id} className='slide' style={{ transhtmlForm: `translateX(${x}%)`}}>
-    //                     {/* {items}  */}
-                        // <div>
-                            // <h1>{items.heading}</h1>
-                            // <h6>{items.little}</h6>
-                            // <button>{items.button}</button>
-                        // </div>
-
-    //                     <img src={items.image} alt='carousel one'/>
-    //                 </div>
-
-    //               ) 
-    //             })
-    //         }
-    //         <img src={carouselInfo.image} alt='carousel one'/>
-    //         {(x === 0) ? null :  <button id='goLeft' onClick={goLeft}>Left</button> }
-    //         {x > -200 && <button id='goRight' onClick={goRight}>Right</button>}
-    //     </div>
-    // )
 }
 
 export default CarouselHeader
