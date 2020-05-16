@@ -14,10 +14,10 @@ body, html{
 		margin: 0 auto;
 		margin-top: 20px;
 		position: relative;
-		width: 70%;
+		width: 100%;
 		height: 0;
 		padding-bottom: 38%;
-	  user-select: none;
+	    user-select: none;
 		background-color: #1c1c1c;
 		border: solid 10px #616161;
 		border-radius:10px ; 
@@ -38,7 +38,7 @@ body, html{
 		height: inherit;
 		position: absolute;
 		top:0; 
-		background-color: rgba(88, 88, 88,.2);
+		background-color: rgba(88, 88, 88,.2);  
 		color:rgba(244, 244, 244,.9);
 		z-index: 99;
 		transition: .45s;
@@ -72,7 +72,7 @@ body, html{
 	cursor: default;
 }
 
-#nav_slide .dots{
+#nav_slide .dots {
 	top: -5px;
 	width: 18px;
 	height: 18px;
@@ -92,15 +92,18 @@ body, html{
 
 .slide_img{z-index: -1;}
 
-	#i1:checked ~ #one  ,
-	#i2:checked ~ #two  ,
-	#i3:checked ~ #three
-	{z-index: 9; animation: scroll 1s ease-in-out;}
+#i1:checked ~ #one,
+#i2:checked ~ #two, 
+ #i3:checked ~ #three { 
+        z-index: 9;
+        animation: scroll 1s ease-in-out
+}
 
-	#i1:checked  ~  #nav_slide #dot1,
-	#i2:checked  ~  #nav_slide #dot2,
-	#i3:checked  ~  #nav_slide #dot3
-	{ background-color: rgba(255,255,255,.9);}
+#i1:checked  ~  #nav_slide #dot1,
+#i2:checked  ~  #nav_slide #dot2,
+#i3:checked  ~  #nav_slide #dot3 {
+    background-color: rgba(255,255,255,.9);
+}
 
 @keyframes scroll{
 	0%{	opacity:.4;}

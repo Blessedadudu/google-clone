@@ -36,41 +36,41 @@ const CarouselHeader = () => {
     console.log(carouselInfo)
 
     return (
-        <div class="container">
+        <div className="container">
             
-            <input type="radio" id="i1" name="images" checked />
+            <input type="radio" id="i1" name="images" defaultChecked />
             <input type="radio" id="i2" name="images" />
             <input type="radio" id="i3" name="images" />	
             
-            <div class="slide_img" id="one">			
+            <div className="slide_img" id="one">			
                     
-                    <img src='http://wallpaperswide.com/download/big_hero_6_baymax-wallpaper-1152x720.jpg' alt='caroimage'/>
+                    <img src={carousel1} alt='caroimage'/>
                     
-                        <label class="prev" for="i5"><span>&#x2039;</span></label>
-                        <label class="next" for="i2"><span>&#x203a;</span></label>	
+                        <label className="prev" htmlFor="i3"><span>&#x2039;</span></label>
+                        <label className="next" htmlFor="i2"><span>&#x203a;</span></label>	
                 
             </div>
             
-            <div class="slide_img" id="two">
+            <div className="slide_img" id="two">
                 
-                    <img src={carousel2} alt='caroimge' />
+                    <img src="https://preview.ibb.co/e5OShF/cropped_800_480_111290.jpg" alt='caroimge' />
                     
-                        <label class="prev" for="i1"><span>&#x2039;</span></label>
-                        <label class="next" for="i3"><span>&#x203a;</span></label>
+                        <label className="prev" htmlFor="i1"><span>&#x2039;</span></label>
+                        <label className="next" htmlFor="i3"><span>&#x203a;</span></label>
                 
             </div>
                     
-            <div class="slide_img" id="three">
+            <div className="slide_img" id="three">
                     <img src='http://wallpaperswide.com/download/up_house-wallpaper-1280x800.jp' alt='carouimage' />	
                     
-                        <label class="prev" for="i2"><span>&#x2039;</span></label>
-                        <label class="next" for="i4"><span>&#x203a;</span></label>
+                        <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
+                        <label className="next" htmlFor="i1"><span>&#x203a;</span></label>
             </div>
 
             <div id="nav_slide">
-                <label for="i1" class="dots" id="dot1"></label>
-                <label for="i2" class="dots" id="dot2"></label>
-                <label for="i3" class="dots" id="dot3"></label>
+                <label htmlFor="i1" className="dots" id="dot1"></label>
+                <label htmlFor="i2" className="dots" id="dot2"></label>
+                <label htmlFor="i3" className="dots" id="dot3"></label>
             </div>
                 
         </div>
@@ -95,11 +95,11 @@ const CarouselHeader = () => {
 
 
     // return (
-    //     <div className='slider'>
+    //     <div classNameName='slider'>
     //         { 
     //             carouselInfo.map((items, id) => {
     //               return (
-    //                 <div key={id} className='slide' style={{ transform: `translateX(${x}%)`}}>
+    //                 <div key={id} className='slide' style={{ transhtmlForm: `translateX(${x}%)`}}>
     //                     {/* {items}  */}
                         // <div>
                             // <h1>{items.heading}</h1>
