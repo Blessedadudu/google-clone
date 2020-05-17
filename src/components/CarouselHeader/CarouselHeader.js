@@ -3,6 +3,8 @@ import './CarouselHeader.scss';
 import carousel1 from '../../assets/carousel1.png';
 import carousel2 from '../../assets/carousel2.png';
 import carousel3 from '../../assets/carousel3.png';
+import carousel3A from '../../assets/carousel3A.png';
+
 
 
 
@@ -79,7 +81,7 @@ const CarouselHeader = () => {
                             <p>{carouselInfo[2].little}</p>
                             <button>{carouselInfo[2].button}</button>
                         </div> 
-                        <img src={carousel3} alt='caroimage'/>
+                        <img src={carousel3A} alt='caroimage' className='carousel3'/>
                     </div>			   
                     
                         <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
