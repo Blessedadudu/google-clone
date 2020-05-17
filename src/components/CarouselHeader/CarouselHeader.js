@@ -10,8 +10,8 @@ import carousel3 from '../../assets/carousel3.png';
 const CarouselHeader = () => {
     let carouselInfo = [ {
         id: 1,
-        heading: 'Write emails faster',
-        little: 'Get suggestions as you type. Simply hit tab to accept and you\'re done.',
+        heading: 'Get more done with Gmail',
+        little: 'Join video meetings with live captioning and screen sharing for up to 100 people — now with Google Meet in Gmail',
         button: 'Create an account',
         image: carousel1
     },
@@ -46,7 +46,7 @@ const CarouselHeader = () => {
                     <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[0].heading}</h1>
-                            <h6>{carouselInfo[0].little}</h6>
+                            <p>{carouselInfo[0].little}</p>
                             <button>{carouselInfo[0].button}</button>
                         </div> 
                         <img src={carousel1} alt='caroimage'/>
@@ -62,7 +62,7 @@ const CarouselHeader = () => {
                     <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[1].heading}</h1>
-                            <h6>{carouselInfo[1].little}</h6>
+                            <p>{carouselInfo[1].little}</p>
                             <button>{carouselInfo[1].button}</button>
                         </div> 
                         <img src={carousel2} alt='caroimage'/>
@@ -76,7 +76,7 @@ const CarouselHeader = () => {
                     <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[2].heading}</h1>
-                            <h6>{carouselInfo[2].little}</h6>
+                            <p>{carouselInfo[2].little}</p>
                             <button>{carouselInfo[2].button}</button>
                         </div> 
                         <img src={carousel3} alt='caroimage'/>
