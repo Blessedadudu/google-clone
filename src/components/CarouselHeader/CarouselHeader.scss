@@ -10,7 +10,7 @@ body, html{
 
 #i1, #i2, #i3 { display: none;}
 
-.container{
+.container {
 		margin: 0 auto;
 		margin-top: 20px;
 		position: relative;
@@ -23,16 +23,26 @@ body, html{
 		border-radius:10px ; 
 	}
 
-	.container .slide_img{
+    .imageFlex {
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .imageAbs {
+        padding: 5rem;
+        // position: absolute;
+        color: red
+    }
+    
+	.slide_img {
 		position: absolute;
 		width: 100%;;
 		height: 100%;
 	}
 	.container .slide_img img {
-        display: flex;
-        float: right;
-		width: 40rem;
-		height: 30rem;
+		width: 30rem;
+		height: 20rem;
 	}
 
 	 .prev, .next{
@@ -117,35 +127,7 @@ body, html{
 	100%{opacity:1;}
 }		
 
-/* .yt{
-	margin: 0 auto;
-	margin-top: 50px;
-	position: relative;
-	width: 150px;
-	height:50px;
-	border: outset #2c2c2c 4px;
-	border-radius: 10px;
-	text-align: center;
-	font-size: 30pt;
-	transition: .5s;
-}
 
-.yt a{
-	text-decoration: none;
-	color: #4c4c4c;
-	transition: .5s;
-}
-
-.yt:hover{
-	background: #4c4c4c;
-	transition: .3s;
-}
-
-.yt:hover a{
-	color: #fff;
-	transition: .3s;
-}
- */
 @media screen and (max-width: 685px){
 	.container{
 		border: none;

@@ -43,13 +43,13 @@ const CarouselHeader = () => {
             <input type="radio" id="i3" name="images" />	
             
             <div className="slide_img" id="one">
-                    <div>
-                       <img src={carousel1} alt='caroimage'/>
-                        <div>
+                    <div className='imageFlex'>
+                        <div className='imageAbs'>
                             <h1>{carouselInfo[0].heading}</h1>
                             <h6>{carouselInfo[0].little}</h6>
                             <button>{carouselInfo[0].button}</button>
                         </div> 
+                        <img src={carousel1} alt='caroimage'/>
                     </div>			   
                     
                     
@@ -59,27 +59,28 @@ const CarouselHeader = () => {
             </div>
             
             <div className="slide_img" id="two">
-                <div>
-                    <img src={carousel2} alt='caroimage'/>
-                    <div>
-                        <h1>{carouselInfo[1].heading}</h1>
-                        <h6>{carouselInfo[1].little}</h6>
-                        <button>{carouselInfo[1].button}</button>
-                    </div> 
-                </div>   
+                    <div className='imageFlex'>
+                        <div className='imageAbs'>
+                            <h1>{carouselInfo[1].heading}</h1>
+                            <h6>{carouselInfo[1].little}</h6>
+                            <button>{carouselInfo[1].button}</button>
+                        </div> 
+                        <img src={carousel2} alt='caroimage'/>
+                    </div>			   
+                     
                 <label className="prev" htmlFor="i1"><span>&#x2039;</span></label>
                 <label className="next" htmlFor="i3"><span>&#x203a;</span></label>
             </div>
                     
             <div className="slide_img" id="three">
-                <div>
-                    <img src={carousel3} alt='caroimage'/>
-                    <div>
-                        <h1>{carouselInfo[2].heading}</h1>
-                        <h6>{carouselInfo[2].little}</h6>
-                        <button>{carouselInfo[2].button}</button>
-                    </div> 
-                </div>	
+                    <div className='imageFlex'>
+                        <div className='imageAbs'>
+                            <h1>{carouselInfo[2].heading}</h1>
+                            <h6>{carouselInfo[2].little}</h6>
+                            <button>{carouselInfo[2].button}</button>
+                        </div> 
+                        <img src={carousel3} alt='caroimage'/>
+                    </div>			   
                     
                         <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
                         <label className="next" htmlFor="i1"><span>&#x203a;</span></label>

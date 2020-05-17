@@ -13,6 +13,7 @@ function App() {
      <Navbar/>
      <Header/>
      <CarouselHeader/>
+     <Header/>
     </div>
   );
 }
