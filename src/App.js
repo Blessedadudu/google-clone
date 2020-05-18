@@ -8,7 +8,7 @@ function App() {
   return ( 
     <div>
      <Navbar/>
-     <Header/>
+     {/* <Header/> */}
      <CarouselHeader/>
      <Header/>
     </div>

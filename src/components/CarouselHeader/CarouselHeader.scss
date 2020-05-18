@@ -11,9 +11,10 @@ body, html{
 #i1, #i2, #i3 { display: none;}
 
 .container {
-		// margin: 0 auto;
+		margin: 0 auto;
 		// margin-top: 20px;
-		position: relative;
+        position: relative;
+        padding-top: 3rem;
 		width: 100%;
 		min-height: 80vh;
 		// padding: 5rem;
@@ -61,7 +62,7 @@ body, html{
             transition: all .3s linear;  // add sass variable
             cursor: pointer;
             font-size: 14px;
-            font-weight: 500;
+            -webkit-font-weight: bold;
             letter-spacing: .75px;
 
             // &:last-child {
