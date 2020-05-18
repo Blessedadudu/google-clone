@@ -1,12 +1,12 @@
 .section1 {
     background-color: white;
+    min-width: 100%;
+    overflow: hidden;
 
 
     .androidFlex {
-        // display: flexbox;
-        // justify-content: center;
         text-align: center;
-        padding: 5rem;
+        padding-top: 5rem;
     }
 
     h1 {
@@ -14,6 +14,32 @@
         line-height: 1.18182;
         // letter-spacing: -0.5px
         font-weight: bold;
+        padding-bottom: 1.5rem
     }
+
+    p {
+        padding-bottom: 2rem;
+    }
+
+    .appleFlex {
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: auto;
+            width: 12rem;
+            padding: .5rem
+        }
+
+    }
+
+    .maxDesktop {
+        width: 100vw;
+        height: auto;
+        margin-right: 23rem;
+        font-size: larger;
+    }
+
+
 }
 

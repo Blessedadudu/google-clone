@@ -52,8 +52,8 @@ const CarouselHeader = () => {
                             <button>{carouselInfo[0].button}</button>
                         </div> 
                         <picture>
-                            <source media="(max-width: 900px)" srcset={carousel2}/>
-                            <source media="(max-width: 480px)" srcset={carousel3}/>
+                            <source media="(max-width: 900px)" srcSet={carousel2}/>
+                            <source media="(max-width: 480px)" srcSet={carousel3}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
                         
