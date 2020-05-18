@@ -12,7 +12,7 @@ const Navbar = () => {
                     <p>Gmail</p>
                 </div>
                 <div className='nav--create'>
-                   <p>For Work</p> 
+                   <p>For Work</p>  
                    <p>Sign in</p>
                    <h5 className='createHide'>Create an account</h5>
                    <h5>Get Gmail</h5>
