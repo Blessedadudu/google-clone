@@ -40,6 +40,35 @@
         font-size: larger;
     }
 
+    .maxGmail {
+        width: 100%;
+        height: auto;
+    }
+
+    .gmailFlex {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 0;
+
+        // justify-content: ;
+    }
+
+    .gmailFlex1 {
+        background-color: rgb(247, 247, 247);
+        width: 50%;
+        overflow: hidden;
+        padding: 6rem 0;
+        margin: 1.5rem;
+    }
+
+    .gmailFlex2 {
+        background-color: rgb(247, 247, 247);
+        width: 50%;
+        overflow: hidden;
+        padding: 6rem 0;
+        margin: 1.5rem;
+    }
+
 
 }
 

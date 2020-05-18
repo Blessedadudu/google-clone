@@ -4,6 +4,11 @@ import android from '../../assets/android.png';
 import apple from '../../assets/apple.png';
 import maxDesktop from '../../assets/maxDesktop.png';
 import minDesktop from '../../assets/minDesktop.png';
+import maxgmail from '../../assets/maxgmail.png';
+import minGmail1 from '../../assets/minGmail1.png';
+import minGmail2 from '../../assets/minGmail2.png';
+
+
 
 
 const BodySection1 = () => {
@@ -23,6 +28,26 @@ const BodySection1 = () => {
             </div>
             {/* <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/> */}
            
+            <div className='gmailFlex'>
+                <div className='gmailFlex1'>
+                    <h1>Stay organized instantly</h1>
+                    <p>See what’s new at a glance, and decide what you want to read and respond to.</p>
+                    <picture>
+                        <source media="(max-width: 799px)" srcSet={minGmail1}/>
+                        <source media="(max-width: 799px)" srcSet={minGmail2}/>
+                        <img src={maxgmail} alt='maxDesktop' className='maxGmail'/>
+                    </picture>
+                </div>
+                <div className='gmailFlex2'>
+                    <h1>Never drop the ball</h1>
+                    <p>Get nudges that remind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
+                    <picture>
+                        <source media="(max-width: 799px)" srcSet={minGmail1}/>
+                        <source media="(max-width: 799px)" srcSet={minGmail2}/>
+                        <img src={maxgmail} alt='maxDesktop' className='maxGmail'/>
+                    </picture>
+                </div>
+            </div>
         </section>
     )
 }
