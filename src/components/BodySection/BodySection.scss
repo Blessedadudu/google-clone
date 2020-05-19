@@ -116,5 +116,47 @@
     }
 
 
+    .gmailLast {
+        text-align: center;
+        display: inline;
+        margin: 0 auto;
+        background-color: rgb(255, 255, 255);
+        padding: 2rem 0;
+
+        img {
+            width: 18%;
+            height: auto;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-size: 44px;
+            line-height: 1.18182;
+            letter-spacing: .5px;
+            padding: 3rem 0;
+        }
+
+        h5 {
+            display: inline;
+            text-align: center;
+            background-color: #1a73e8;
+            padding: 1rem 2.2rem; 
+            border-radius: 4px;
+            color: white;
+            transition: all .3s linear;  // add sass variable
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: .75px;
+    
+    
+            &:hover {
+                background-color: #1155ad;
+            }
+    
+        }
+    }
+
+
 }
 

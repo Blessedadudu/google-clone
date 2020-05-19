@@ -1,17 +1,19 @@
 import React from 'react';
 import './App.scss';
 import Navbar from './components/Navbar/Navbar';
-import Header from './components/Header/Header';
+// import Header from './components/Header/Header';
 import CarouselHeader from './components/CarouselHeader/CarouselHeader';
-import BodySection1 from './components/BodySection1/BodySection1';
+import BodySection from './components/BodySection/BodySection';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return ( 
     <div>
-     <Navbar/>
-     <CarouselHeader/>
-       {/* <Header/> */}
-     <BodySection1/>
+      <Navbar/>
+      <CarouselHeader/>
+        {/* <Header/> */}
+      <BodySection/>
+      <Footer/>
     </div>
   );
 }

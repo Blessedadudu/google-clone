@@ -1,5 +1,5 @@
 import React from 'react';
-import './BodySection1.scss'
+import './BodySection.scss'
 import android from '../../assets/android.png';
 import apple from '../../assets/apple.png';
 import maxDesktop from '../../assets/maxDesktop.png';
@@ -8,6 +8,8 @@ import maxgmail from '../../assets/maxgmail.png';
 import maxGmail2 from '../../assets/maxGmail2.png';
 import maxGmail3 from '../../assets/maxGmail3.png';
 import maxGmail5 from '../../assets/maxGmail5.png';
+import gmailLogo from '../../assets/logo-gmail.png';
+
 
 
 
@@ -17,7 +19,7 @@ import minGmail2 from '../../assets/minGmail2.png';
 
 
 
-const BodySection1 = () => {
+const BodySection = () => {
     return (
         <section className='section1'>
             <div className='androidFlex'>
@@ -88,14 +90,14 @@ const BodySection1 = () => {
                 </div>
             </div>
             <div className='gmailFlex'>
-
-                <div className='gmailFlex1'>
-                    <h1>Take action right from the inbox</h1>
-                    <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                <div className='gmailLast'>
+                        <img src={gmailLogo} alt='the gmail logo' />
+                        <h1>Get started with Gmail</h1>
+                        <h5>Create an account</h5>
                 </div>
             </div>
         </section>
     )
 }
 
-export default BodySection1
+export default BodySection

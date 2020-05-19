@@ -62,7 +62,7 @@ body, html{
             transition: all .3s linear;  // add sass variable
             cursor: pointer;
             font-size: 14px;
-            -webkit-font-weight: bold;
+            font-weight: bold;
             letter-spacing: .75px;
 
             // &:last-child {
