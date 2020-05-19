@@ -26,18 +26,26 @@
         justify-content: center;
 
         img {
-            height: auto;
+            height: 4.5rem;
             width: 12rem;
-            padding: .5rem
+            padding: .5rem;  
         }
 
     }
 
+    // .center {
+    //     text-align: center;
+    //     display: block;
+    //     margin: 0 auto;
+    //     object-fit: fill 
+    // }
+
     .maxDesktop {
-        width: 100vw;
+        width: 115%;
         height: auto;
-        margin-right: 23rem;
         font-size: larger;
+        transform: translateX(-10%);
+
     }
 
     .maxGmail {

@@ -21,10 +21,12 @@ const BodySection1 = () => {
                     <img src={android} alt='android'/>
                     <img src={apple} alt='apple'/>
                 </div>
-                <picture>
-                    <source media="(max-width: 799px)" srcSet={minDesktop}/>
-                    <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/>
-                </picture>
+                <div className='center'>
+                    <picture>
+                        <source media="(max-width: 799px)" srcSet={minDesktop}/>
+                        <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/>
+                    </picture>
+                </div>
             </div>
             {/* <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/> */}
            

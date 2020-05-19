@@ -10,7 +10,7 @@ function App() {
     <div>
      <Navbar/>
      <CarouselHeader/>
-       <Header/>
+       {/* <Header/> */}
      <BodySection1/>
     </div>
   );
