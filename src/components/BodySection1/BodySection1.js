@@ -50,6 +50,40 @@ const BodySection1 = () => {
                     </picture>
                 </div>
             </div>
+            <div className='gmailFlex'>
+                <div className='gmailFlex3'>
+                    <h1>Take action right from the inbox</h1>
+                    <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                    
+                </div>
+                <div className='gmailFlex4'>
+                    <picture>
+                        <source media="(max-width: 799px)" srcSet={minGmail1}/>
+                        <source media="(max-width: 799px)" srcSet={minGmail2}/>
+                        <img src={maxgmail} alt='maxDesktop' className='maxGmail'/>
+                    </picture>
+                </div>
+            </div>
+            <div className='gmailFlex'>
+                <div className='gmailFlex2'>
+                    <picture>
+                        <source media="(max-width: 799px)" srcSet={minGmail1}/>
+                        <source media="(max-width: 799px)" srcSet={minGmail2}/>
+                        <img src={maxgmail} alt='maxDesktop' className='maxGmail'/>
+                    </picture>
+                </div>
+                <div className='gmailFlex1'>
+                    <h1>Take action right from the inbox</h1>
+                    <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                </div>
+            </div>
+            <div className='gmailFlex'>
+
+                <div className='gmailFlex1'>
+                    <h1>Take action right from the inbox</h1>
+                    <p>View attachments, RSVP to events, snooze messages and more without opening any emails.</p>
+                </div>
+            </div>
         </section>
     )
 }

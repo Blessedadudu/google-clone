@@ -61,6 +61,7 @@
         // justify-content: ;
     }
 
+    
     .gmailFlex1 {
         background-color: rgb(247, 247, 247);
         width: 50%;
@@ -71,6 +72,22 @@
 
     .gmailFlex2 {
         background-color: rgb(247, 247, 247);
+        width: 50%;
+        overflow: hidden;
+        padding: 6rem 0;
+        margin: 1.5rem;
+    }
+
+    .gmailFlex3 {
+        background-color: rgb(255, 255, 255);
+        width: 50%;
+        overflow: hidden;
+        padding: 6rem 0;
+        margin: 1.5rem;
+    }
+
+    .gmailFlex4 {
+        background-color: rgb(255, 255, 255);
         width: 50%;
         overflow: hidden;
         padding: 6rem 0;
