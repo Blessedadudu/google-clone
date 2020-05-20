@@ -194,7 +194,44 @@
     .section1 {
 
         .gmailFlex {
-            padding: 0
+            padding: 0;
+             
+            %gmailFlexMedia1 {
+                h1 {
+                    font-size: 34px;
+                    padding: 2rem 0;
+                    font-weight: bold;
+                }
+
+
+                p {
+                    font-size: 14px;
+                }
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .gmailFlex1 {
+                @extend %gmailFlexMedia1
+            }
+
+            .gmailFlex2 {
+                @extend %gmailFlexMedia1;
+            }
+
+        }
+
+        .gmailStay {
+            display: grid;
+            grid-template-columns: 1fr;
+
+
+            %gmailFlex1 {
+                width: 90%;
+            }
+            
         }
 
         .gmailLast {
@@ -264,6 +301,9 @@
 
         
         .gmailFlex3 {
+            h1 {
+                font-size: 34px;
+            }
             h1, p {
                 padding-left: 0;
                 width: 90%;
