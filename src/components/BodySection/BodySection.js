@@ -9,6 +9,8 @@ import maxGmail2 from '../../assets/maxGmail2.png';
 import maxGmail3 from '../../assets/maxGmail3.png';
 import maxGmail5 from '../../assets/maxGmail5.png';
 import gmailLogo from '../../assets/logo-gmail.png';
+import avoidMedia from '../../assets/avoidMedia.png';
+
 
 
 
@@ -76,20 +78,19 @@ const BodySection = () => {
             </div>
             <div className='gmailFlex'>
                 <div className='gmailAlign'>
-                    <div className='gmailFlex2'>
-                        <picture>
-                            <source media="(max-width: 799px)" srcSet={minGmail1}/>
-                            <source media="(max-width: 799px)" srcSet={minGmail2}/>
-                            <img src={maxGmail5} alt='maxDesktop' className='maxGmail'/>
-                        </picture>
-                    </div>
                     <div className='gmailFlex1'>
                         <h1>Avoid suspicious emails</h1>
                         <p>Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you’ll get a warning.</p>
                     </div>
+                    <div className='gmailFlex2'>
+                        <picture>
+                            <source media="(max-width: 768px)" srcSet={avoidMedia}/>
+                            <img src={maxGmail5} alt='maxDesktop' className='maxGmail'/>
+                        </picture>
+                    </div>
                 </div>
             </div>
-            <div className='gmailFlex'>
+            <div className='gmailFlex'> 
                 <div className='gmailLast'>
                         <img src={gmailLogo} alt='the gmail logo' />
                         <h1>Get started with Gmail</h1>

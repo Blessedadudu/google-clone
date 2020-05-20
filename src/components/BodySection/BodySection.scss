@@ -69,6 +69,14 @@
     .gmailFlex1 {
       @extend %gmailFlex1;
 
+
+      h1 {
+          font-size: 44px;
+          font-weight: bold;
+          margin-bottom: .1rem;
+
+      }
+
       h1, p {
         @extend %paddingtext
     }
@@ -77,8 +85,10 @@
     .gmailFlex2 {
         @extend %gmailFlex1;
 
+
         h1, p {
-            @extend %paddingtext
+            @extend %paddingtext;
+            
         }
     }
 
@@ -160,3 +170,61 @@
 
 }
 
+
+@media only screen and (max-width: 768px) {
+    .section1 {
+        .gmailLast {
+
+            h1 {
+                font-size: 34px;
+            }
+        
+        }
+        .gmailAlign {
+            display: inline;
+        }
+
+        %gmailFlex1 {
+            display: inline;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+     
+        .gmailFlex2 {
+            img {
+                width: 60%;
+                margin-left: 4rem;
+                padding-bottom: 0
+            }
+        }
+
+        .gmailFlex1 {
+
+            h1 {
+                font-size: 34px;
+            }
+            h1, p {
+                display: block;
+                // transform: translate(0, -26rem);
+            }
+           
+
+        }
+    }
+   
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .section1 {
+        .gmailFlex2 {
+            img {
+                width: 65%;
+                margin-left: 0;
+                // transform: translate(10%, 40%)
+            }
+        }
+    }
+}
