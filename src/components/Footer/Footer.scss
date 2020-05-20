@@ -1,4 +1,28 @@
 .footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    width: 100vw;
     
+}
+
+%footFlex {
+    display: flex;
+    align-items: center;
+}
+
+.footFlex {
+   @extend %footFlex;
+//    width: 40%;
+   
+   p {
+        padding: 0 2rem;
+   }
+}
+
+.footFlex2 {
+    @extend %footFlex;
+    justify-content: space-between;
+    width: 20%
 }
