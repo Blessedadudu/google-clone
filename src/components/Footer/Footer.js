@@ -11,7 +11,7 @@ class Footer extends Component {
                         <p>Privacy </p>
                         <p> Terms</p>
                         <p>About Google</p>
-                        <p> Google Products</p>
+                        <p> Google Products</p> 
                         <p> Our policy</p>
                     </div>
                     <div className='footFlex2'>

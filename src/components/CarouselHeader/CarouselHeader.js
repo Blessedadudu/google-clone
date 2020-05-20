@@ -4,6 +4,8 @@ import carousel1 from '../../assets/carousel1.png';
 import carousel2 from '../../assets/carousel2.png';
 import carousel3 from '../../assets/carousel3.png';
 import carousel3A from '../../assets/carousel3A.png';
+import carousel1A from '../../assets/carousel1A.png';
+
 
 
 
@@ -45,24 +47,22 @@ const CarouselHeader = () => {
             <input type="radio" id="i3" name="images" />	
             
             <div className="slide_img" id="one">
-                    {/* <div className='imageFlex'>
+                    <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[0].heading}</h1>
                             <p>{carouselInfo[0].little}</p>
                             <button>{carouselInfo[0].button}</button>
                         </div> 
                         <picture>
-                            <source media="(max-width: 900px)" srcSet={carousel2}/>
-                            <source media="(max-width: 480px)" srcSet={carousel3}/>
+                            <source media="(max-width: 768px)" srcSet={carousel1A}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
                         
-                    </div>			    */}
+                    </div>			   
                     
                     
                         <label className="prev" htmlFor="i3"><span>&#x2039;</span></label>
                         <label className="next" htmlFor="i2"><span>&#x203a;</span></label>	
-                
             </div>
             
             <div className="slide_img" id="two">

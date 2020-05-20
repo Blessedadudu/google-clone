@@ -29,6 +29,7 @@
             height: 4.5rem;
             width: 12rem;
             padding: .5rem;  
+            margin-bottom: 5rem;
         }
 
     }
@@ -51,6 +52,22 @@
         padding: 2rem 0;
 
         // justify-content: ;
+
+        .gmailFlex2A {
+              padding: 4rem 0 0 0;
+
+              h1,p {
+                  padding-left: 2rem;
+                  width: 92%;
+              }
+
+              p {
+                  line-height: 1.71429;
+                letter-spacing: .25px;
+              }
+        }
+
+
     }
 
     %gmailFlex1 {
@@ -152,6 +169,10 @@
         background-color: rgb(255, 255, 255);
         padding: 2rem 0;
 
+        .hideMin {
+            display: none;
+        }
+
         img {
             width: 18%;
             height: auto;
@@ -193,6 +214,29 @@
 @media only screen and (max-width: 768px) {
     .section1 {
 
+        .androidFlex {
+            h1 {
+                font-size: 34px;
+                text-align: center;
+                // width: 95%;
+            }
+
+            p {
+                font-size: 14px;
+            }
+        }
+
+        .appleFlex {
+
+           
+            img {
+                height: 4rem;
+                width: 11rem;
+                padding: .5rem;  
+                margin-bottom: 3rem;
+            }
+        }
+
         .gmailFlex {
             padding: 0;
              
@@ -223,6 +267,8 @@
 
         }
 
+       
+
         .gmailStay {
             display: grid;
             grid-template-columns: 1fr;
@@ -235,15 +281,37 @@
         }
 
         .gmailLast {
-
+            padding: 6rem 0;
             h1 {
                 font-size: 34px;
+            }
+
+            .hideMax {
+                display: none;
+            }
+
+            .hideMin {
+                display: inline;
+            }
+
+            h5 {
+                padding: 1rem 1.8rem; 
             }
         
         }
         .gmailAlign,  .gmailFlexIn  {
             display: inline;
         }
+
+        .gmailAlign {
+            .gmailFloat2 {
+                img {
+                    width: 65%
+                }
+            }
+        }
+
+
 
         %gmailFlex1 {
             display: inline;
@@ -291,7 +359,6 @@
             .gmailFlex4 {
                 img {
                     max-width: 70%;
-                    // height: 10%;
                     margin-left: 4rem;
                     padding: 0;
                 }
@@ -309,13 +376,17 @@
                 width: 90%;
                 text-align: center;
             }
+
+            p {
+                font-size: 14px
+            }
         }
 
         .gmailFlex1 {
             h1, p {
                 padding-left: 0;
-                width: 90%;
-                margin-left: 1.5rem;
+                width: 99%;
+                margin-left: 0.5rem;
                 text-align: center;
 
             }

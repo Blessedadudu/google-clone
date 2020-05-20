@@ -17,17 +17,6 @@ import maxGmailInit2 from '../../assets/maxGmailInit2.png';
 
 
 
-
-
-
-
-
-import minGmail1 from '../../assets/minGmail1.png';
-import minGmail2 from '../../assets/minGmail2.png';
-
-
-
-
 const BodySection = () => {
     return (
         <section className='section1'>
@@ -40,7 +29,7 @@ const BodySection = () => {
                 </div>
                 <div className='center'>
                     <picture>
-                        <source media="(max-width: 799px)" srcSet={minDesktop}/>
+                        <source media="(max-width: 768px)" srcSet={minDesktop}/>
                         <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/>
                     </picture>
                 </div>
@@ -56,7 +45,7 @@ const BodySection = () => {
                         <img src={maxgmail} alt='maxDesktop' className='maxGmail'/>
                     </picture>
                 </div>
-                <div className='gmailFlex2'>
+                <div className='gmailFlex2 gmailFlex2A'>
                     <h1>Never drop the ball</h1>
                     <p>Get nudges that remind you to follow up and respond to messages, so that nothing slips through the cracks.</p>
                     <picture>
@@ -97,7 +86,10 @@ const BodySection = () => {
                 <div className='gmailLast'>
                         <img src={gmailLogo} alt='the gmail logo' />
                         <h1>Get started with Gmail</h1>
-                        <h5>Create an account</h5>
+                        <h5 className='hideMax'>Create an account</h5>
+                        <h5 className='hideMin'>Get Gmail</h5>
+
+
                 </div>
             </div>
         </section>
