@@ -68,6 +68,12 @@
 
     .gmailFlex1 {
       @extend %gmailFlex1;
+      p {
+        line-height: 1.71429;
+        letter-spacing: .25px;
+      }
+
+
 
 
       h1 {
@@ -78,18 +84,31 @@
       }
 
       h1, p {
-        @extend %paddingtext
+        @extend %paddingtext;
+
     }
+    }
+
+    .gmailFloat {
+        // margin-left: 24rem;
+        transform: translateX(110%)
+        
+    }
+
+    .gmailFloat2 {
+        // margin-left: 24rem;
+        transform: translateX(-110%)
+        
     }
 
     .gmailFlex2 {
         @extend %gmailFlex1;
 
 
-        h1, p {
-            @extend %paddingtext;
-            
-        }
+        // h1, p {
+        //     @extend %paddingtext;
+        //     float: right;
+        // }
     }
 
     %gmailFlex2 {
@@ -173,6 +192,11 @@
 
 @media only screen and (max-width: 768px) {
     .section1 {
+
+        .gmailFlex {
+            padding: 0
+        }
+
         .gmailLast {
 
             h1 {
@@ -180,7 +204,7 @@
             }
         
         }
-        .gmailAlign {
+        .gmailAlign,  .gmailFlexIn  {
             display: inline;
         }
 
@@ -190,11 +214,13 @@
             padding: 0 2rem;
         }
 
+
+
      
         .gmailFlex2 {
             img {
-                width: 60%;
-                margin-left: 4rem;
+                width: 65%;
+                margin-left: .2rem;
                 padding-bottom: 0
             }
         }
@@ -206,12 +232,60 @@
             }
             h1, p {
                 display: block;
-                // transform: translate(0, -26rem);
             }
            
 
         }
+
+        .maxGmail {
+            padding: 0 ;
+        }
+
+
+        .gmailFlexIn {
+            %gmailFlex2 {
+                background-color: rgb(255, 255, 255);
+                width: 100%;
+                overflow: hidden;
+                // padding: 4rem 0;
+                margin: 1.5rem 1.5rem 0 1.5rem;
+            }
+        
+            .gmailFlex4 {
+                img {
+                    max-width: 70%;
+                    // height: 10%;
+                    margin-left: 4rem;
+                    padding: 0;
+                }
+            }
+        }
+
+
+        
+        .gmailFlex3 {
+            h1, p {
+                padding-left: 0;
+                width: 90%;
+                text-align: center;
+            }
+        }
+
+        .gmailFlex1 {
+            h1, p {
+                padding-left: 0;
+                width: 90%;
+                margin-left: 1.5rem;
+                text-align: center;
+
+            }
+        }
+
     }
+
+    
+   
+
    
 }
 
@@ -221,7 +295,7 @@
     .section1 {
         .gmailFlex2 {
             img {
-                width: 65%;
+                width: 62%;
                 margin-left: 0;
                 // transform: translate(10%, 40%)
             }

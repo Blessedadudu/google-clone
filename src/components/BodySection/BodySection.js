@@ -10,6 +10,8 @@ import maxGmail3 from '../../assets/maxGmail3.png';
 import maxGmail5 from '../../assets/maxGmail5.png';
 import gmailLogo from '../../assets/logo-gmail.png';
 import avoidMedia from '../../assets/avoidMedia.png';
+import minGmail3 from '../../assets/minGmail3.png';
+
 
 
 
@@ -69,8 +71,7 @@ const BodySection = () => {
                     </div>
                     <div className='gmailFlex4'>
                         <picture>
-                            <source media="(max-width: 799px)" srcSet={minGmail1}/>
-                            <source media="(max-width: 799px)" srcSet={minGmail2}/>
+                            <source media="(max-width: 768px)" srcSet={minGmail3}/>
                             <img src={maxGmail3} alt='maxDesktop' className='maxGmail'/>
                         </picture>
                     </div>
@@ -78,11 +79,11 @@ const BodySection = () => {
             </div>
             <div className='gmailFlex'>
                 <div className='gmailAlign'>
-                    <div className='gmailFlex1'>
+                    <div className='gmailFlex1 gmailFloat'>
                         <h1>Avoid suspicious emails</h1>
                         <p>Gmail blocks 99.9% of dangerous emails before they reach you. If we think something seems phish-y, you’ll get a warning.</p>
                     </div>
-                    <div className='gmailFlex2'>
+                    <div className='gmailFlex2 gmailFloat2'>
                         <picture>
                             <source media="(max-width: 768px)" srcSet={avoidMedia}/>
                             <img src={maxGmail5} alt='maxDesktop' className='maxGmail'/>
