@@ -55,14 +55,17 @@
 
         .gmailFlex2A {
               padding: 4rem 0 0 0;
-
+              
+              h1 {
+                  font-weight: 500;
+              }
               h1,p {
                   padding-left: 2rem;
                   width: 92%;
               }
 
               p {
-                  line-height: 1.71429;
+                line-height: 1.71429;
                 letter-spacing: .25px;
               }
         }
@@ -95,7 +98,7 @@
 
       h1 {
           font-size: 44px;
-          font-weight: bold;
+          font-weight: 500;
           margin-bottom: .1rem;
 
       }
@@ -138,6 +141,9 @@
 
     .gmailFlex3 {
         @extend %gmailFlex2;
+        h1 {
+            font-weight: 500;
+        }
         h1, p {
             @extend %paddingtext
         }
@@ -179,7 +185,7 @@
         }
 
         h1 {
-            font-weight: bold;
+            font-weight: 500;
             font-size: 44px;
             line-height: 1.18182;
             letter-spacing: .5px;
@@ -218,6 +224,7 @@
             h1 {
                 font-size: 34px;
                 text-align: center;
+                font-weight: 500;
                 // width: 95%;
             }
 
@@ -244,7 +251,7 @@
                 h1 {
                     font-size: 34px;
                     padding: 2rem 0;
-                    font-weight: bold;
+                    font-weight: 500;
                 }
 
 
@@ -262,7 +269,7 @@
   
                 h1,p {
                     padding-left: 0;
-                    width: 92%;
+                    width: 100%;
                 }
             }
   
@@ -293,7 +300,9 @@
         .gmailLast {
             padding: 6rem 0;
             h1 {
-                font-size: 34px;
+                font-size: 32px;
+                letter-spacing: 0;
+                line-height: 1.33333;
             }
 
             .hideMax {
@@ -381,6 +390,7 @@
         .gmailFlex3 {
             h1 {
                 font-size: 34px;
+
             }
             h1, p {
                 padding-left: 0;

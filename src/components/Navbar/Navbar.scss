@@ -34,8 +34,11 @@
 
         p {
             padding-left: .5rem;
-            font-size: 25px;
-            color: rgba(0, 0, 0, 0.726)
+            font-size: 26px;
+            color: #5f6368;
+            font-family: "Product Sans",Arial,Helvetica,sans-serif;
+            font-style: normal;
+            font-weight: 400;
         }
     }
 
@@ -45,9 +48,13 @@
         align-items: center;
 
         p {
-            color: rgba(0, 0, 0, 0.514);
+            color: #5f6368;
             padding-right: 2rem;
             cursor: pointer;
+            line-height: 1.85714;
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: .25px;
 
             &:hover {
                 color: black;
@@ -59,14 +66,16 @@
 
         h5 {
             background-color: #1a73e8;
-            padding: 1rem 2rem; 
+            padding: 1rem 1.6rem; 
             border-radius: 4px;
             color: white;
             transition: all .3s linear;  // add sass variable
             cursor: pointer;
             font-size: 14px;
-            font-weight: 500;
-            letter-spacing: .75px;
+            font-weight: 800;
+            letter-spacing: 1.7px;
+            // vertical-align: middle;
+            // line-height: .9;
 
             &:last-child {
                 display: none;
@@ -104,6 +113,7 @@
         color: rgba(0, 0, 0, 0.514);
         cursor: pointer;
         transition: all .3s linear;  // add sass variable
+        font-size: 14px;
 
         &:hover {
             color: black;
