@@ -33,7 +33,7 @@ const BodySection = () => {
                         <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/>
                     </picture>
                 </div>
-            </div>
+            </div> 
             {/* <img src={maxDesktop} alt='maxDesktop' className='maxDesktop'/> */}
            
             <div className='gmailFlex gmailStay'>

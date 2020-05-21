@@ -5,6 +5,8 @@ import carousel2 from '../../assets/carousel2.png';
 import carousel3 from '../../assets/carousel3.png';
 import carousel3A from '../../assets/carousel3A.png';
 import carousel1A from '../../assets/carousel1A.png';
+import carousel2A from '../../assets/carousel2A.png';
+
 
 
 
@@ -21,15 +23,15 @@ const CarouselHeader = () => {
     },
     {
         id: 2,
-        heading: 'A faster way to reply',
-        little: 'espond to emails faster with pre-suggested responses that sound just like you.',
+        heading: 'Write emails faster',
+        little: 'Get suggestions as you type. Simply hit tab to accept and you\'re done.',
         button: 'Create an account',
         image: carousel2
     },
     {
         id: 3,
-        heading: 'Write emails faster',
-        little: 'Get suggestions as you type. Simply hit tab to accept and you\'re done.',
+        heading: 'A faster way to reply',
+        little: 'Respond to emails faster with pre-suggested responses that sound just like you.',
         button: 'Create an account',
         image: carousel3
     }
@@ -55,7 +57,7 @@ const CarouselHeader = () => {
                             {/* <h5 className='hideMinButton'>Get Gmail</h5> */}
                         </div> 
                         <picture>
-                            <source media="(max-width: 1000px)" srcSet={carousel1A}/>
+                            <source media="(max-width: 1080px)" srcSet={carousel1A}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
                         <h5 className='hideMinButton'>Get Gmail</h5>
@@ -68,31 +70,43 @@ const CarouselHeader = () => {
             </div>
             
             <div className="slide_img" id="two">
-                    {/* <div className='imageFlex'>
+                    <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[1].heading}</h1>
                             <p>{carouselInfo[1].little}</p>
-                            <button>{carouselInfo[1].button}</button>
+                            <button className='hidebutton'>{carouselInfo[1].button}</button>
+                            {/* <h5 className='hideMinButton'>Get Gmail</h5> */}
                         </div> 
-                        <img src={carousel2} alt='caroimage'/>
-                    </div>			    */}
+                        <picture>
+                            <source media="(max-width: 1080px)" srcSet={carousel2A}/>
+                            <img src={carousel2} alt='caroimage' className='carousel23'/>
+                        </picture>
+                        <h5 className='hideMinButton'>Get Gmail</h5>
+
+                    </div>	
                      
                 <label className="prev" htmlFor="i1"><span>&#x2039;</span></label>
                 <label className="next" htmlFor="i3"><span>&#x203a;</span></label>
             </div>
                     
             <div className="slide_img" id="three">
-                    {/* <div className='imageFlex'>
+                    <div className='imageFlex'>
                         <div className='imageAbs'>
                             <h1>{carouselInfo[2].heading}</h1>
                             <p>{carouselInfo[2].little}</p>
-                            <button>{carouselInfo[2].button}</button>
+                            <button className='hidebutton'>{carouselInfo[2].button}</button>
+                            {/* <h5 className='hideMinButton'>Get Gmail</h5> */}
                         </div> 
-                        <img src={carousel3A} alt='caroimage' className='carousel3'/>
-                    </div>			    */}
-                    
-                        <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
-                        <label className="next" htmlFor="i1"><span>&#x203a;</span></label>
+                        <picture>
+                            <source media="(max-width: 1080px)" srcSet={carousel3A}/>
+                            <img src={carousel3} alt='caroimage' className='carousel23'/>
+                        </picture>
+                        <h5 className='hideMinButton'>Get Gmail</h5>
+
+                    </div>	
+                
+                    <label className="prev" htmlFor="i2"><span>&#x2039;</span></label>
+                    <label className="next" htmlFor="i1"><span>&#x203a;</span></label>
             </div>
 
             <div className="nav_slide">

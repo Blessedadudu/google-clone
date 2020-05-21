@@ -361,6 +361,7 @@
                     max-width: 70%;
                     margin-left: 4rem;
                     padding: 0;
+                    
                 }
             }
         }
@@ -407,8 +408,22 @@
         .gmailFlex2 {
             img {
                 width: 62%;
-                margin-left: 0;
+                margin-left: -2rem;
                 // transform: translate(10%, 40%)
+            }
+        }
+
+
+        .gmailFlexIn {
+           
+        
+            .gmailFlex4 {
+                img {
+                    max-width: 70%;
+                    margin-left: 2rem;
+                    padding: 0;
+                    
+                }
             }
         }
     }
