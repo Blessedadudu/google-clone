@@ -52,12 +52,14 @@ const CarouselHeader = () => {
                             <h1>{carouselInfo[0].heading}</h1>
                             <p>{carouselInfo[0].little}</p>
                             <button className='hidebutton'>{carouselInfo[0].button}</button>
-                            <h5 className='hideMinButton'>Get Gmail</h5>
+                            {/* <h5 className='hideMinButton'>Get Gmail</h5> */}
                         </div> 
                         <picture>
                             <source media="(max-width: 1000px)" srcSet={carousel1A}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
+                        <h5 className='hideMinButton'>Get Gmail</h5>
+
                     </div>			   
 
                     

@@ -28,7 +28,7 @@ class Footer extends Component {
                                 <option value="/intl/da/gmail/about/" >Dansk</option>
                                 <option value="/intl/de/gmail/about/" >Deutsch</option>
                                 <option value="/intl/et/gmail/about/" >Eesti</option>
-                                <option value="/gmail/about/" selected>English</option>
+                                <option selected>English</option>
                                 <option value="/intl/en_in/gmail/about/" >English (India)</option>
                                 <option value="/intl/en_uk/gmail/about/" >English (United Kingdom)</option>
                                 <option value="/intl/es/gmail/about/" >Español</option>
