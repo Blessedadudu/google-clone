@@ -77,7 +77,7 @@ const BodySection = () => {
                     <div className='gmailFlex2 gmailFloat2'>
                         <picture>
                             <source media="(max-width: 768px)" srcSet={avoidMedia}/>
-                            <img src={maxGmail5} alt='maxDesktop' className='maxGmail'/>
+                            <img src={maxGmail5} alt='maxDesktop' className='maxGmail maxgmailLast'/>
                         </picture>
                     </div>
                 </div>

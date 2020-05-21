@@ -428,9 +428,14 @@
         .gmailFlex2 {
             img {
                 width: 62%;
-                // margin-left: -2rem;
-                transform: translate(10%, 0)
+                margin-left: -2rem;
             }
+
+            .maxgmailLast {
+                margin-left: 0;
+            
+            }
+
         }
 
 
