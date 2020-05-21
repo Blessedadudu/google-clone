@@ -257,6 +257,16 @@
                 }
             }
 
+            .gmailFlex2A {
+                padding: 4rem 0 0 0;
+  
+                h1,p {
+                    padding-left: 0;
+                    width: 92%;
+                }
+            }
+  
+
             .gmailFlex1 {
                 @extend %gmailFlexMedia1
             }
