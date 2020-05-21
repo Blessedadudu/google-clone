@@ -14,7 +14,7 @@ body, html{
 		margin: 0 auto;
 		// margin-top: 20px;
         position: relative;
-        padding-top: 3rem;
+        padding: 3rem 0 7rem 0;
 		width: 100%;
 		min-height: 80vh;
 		// padding: 5rem;
@@ -31,6 +31,26 @@ body, html{
         justify-content: space-between;
         align-items: center;
         padding-top: 4rem;
+    }
+
+    %btnCarousel {
+        background-color: #1a73e8;
+        padding: 1rem 2rem; 
+        border-radius: 4px;
+        color: white;
+        transition: all .3s linear;  // add sass variable
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        letter-spacing: .75px;
+
+        // &:last-child {
+        //     display: none;
+        // }
+
+        &:hover {
+            background-color: #1155ad;
+        }
     }
 
     .imageAbs {
@@ -53,30 +73,15 @@ body, html{
             padding-bottom: 2rem;
         }
 
-
+    
         button {
-            background-color: #1a73e8;
-            padding: 1rem 2rem; 
-            border-radius: 4px;
-            color: white;
-            transition: all .3s linear;  // add sass variable
-            cursor: pointer;
-            font-size: 14px;
-            font-weight: bold;
-            letter-spacing: .75px;
-
-            // &:last-child {
-            //     display: none;
-            // }
-
-            &:hover {
-                background-color: #1155ad;
-            }
-
+           @extend %btnCarousel
         }
 
-
     }
+
+
+
     
 	.slide_img {
 		position: absolute;
@@ -85,11 +90,20 @@ body, html{
         padding-right: 2rem;
         background-color: #f8f9fa;
 
+        h5 {
+            @extend %btnCarousel;
+            width: 30%;
+            text-align: center;
+            
+            padding: .7rem 0;
+            margin: 1rem 0 0 11rem;
+            font-size: 14px;
+        }
+
         img {
             width: 42rem;
             height: 25rem;
             padding-right: 2.4rem;
-
 
         }
     }
@@ -189,7 +203,7 @@ body, html{
 
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1200px) {
 
     .container {
         .imageFlex {
@@ -200,25 +214,69 @@ body, html{
             padding-top: 4rem;
 
             .imageAbs {
-                padding: 5rem 5rem 0;
+                padding: 5rem 0 0 1rem;
                 max-width: 100%;
+                text-align: center;
 
                 h1 {
                     font-size: 34px;
                 }
 
                 p {
-                    
+                    font-size: 14px;
+                    padding: 0;
+                }
+
+                .hidebutton {
+                    display: none;
                 }
             }
+
+            img {
+                display: block;
+                text-align: center;
+                padding: 0 0 0 4rem;
+                margin: 0 auto;
+            }
         }
-
-
-
     }
-   
-
 }
+
+@media only screen and (max-width: 768px) {
+    .container {
+        .imageFlex {
+            .imageAbs {
+                padding: 5rem 0 0 1rem;
+                max-width: 100%;
+                text-align: center;
+
+                h1 {
+                    font-size: 34px;
+                }
+
+                p {
+                    font-size: 14px;
+                    padding: 0;
+                }
+
+                .hidebutton {
+                    display: none;
+                }
+            }
+
+            img {
+                display: block;
+                text-align: center;
+                padding: 0;
+                width: 80%;
+                height: auto;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+
 
 
 // @media screen and (max-width: 685px){

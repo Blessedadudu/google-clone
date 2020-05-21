@@ -51,15 +51,15 @@ const CarouselHeader = () => {
                         <div className='imageAbs'>
                             <h1>{carouselInfo[0].heading}</h1>
                             <p>{carouselInfo[0].little}</p>
-                            <button>{carouselInfo[0].button}</button>
+                            <button className='hidebutton'>{carouselInfo[0].button}</button>
+                            <h5 className='hideMinButton'>Get Gmail</h5>
                         </div> 
                         <picture>
-                            <source media="(max-width: 768px)" srcSet={carousel1A}/>
+                            <source media="(max-width: 1000px)" srcSet={carousel1A}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
-                        
                     </div>			   
-                    
+
                     
                         <label className="prev" htmlFor="i3"><span>&#x2039;</span></label>
                         <label className="next" htmlFor="i2"><span>&#x203a;</span></label>	
