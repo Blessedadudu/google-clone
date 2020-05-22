@@ -5,6 +5,7 @@ import carousel2 from '../../assets/carousel2.png';
 import carousel3 from '../../assets/carousel3.png';
 import carousel3A from '../../assets/carousel3A.png';
 import carousel1A from '../../assets/carousel1A.png';
+import carousel1B from '../../assets/carousel1B.png';
 import carousel2A from '../../assets/carousel2A.png';
 
 
@@ -44,7 +45,7 @@ const CarouselHeader = () => {
     return (
         <div className="container">
             
-            <input type="radio" id="i1" name="images" defaultChecked />
+            <input type="radio" id="i1" name="images" defaultChecked />o
             <input type="radio" id="i2" name="images" />
             <input type="radio" id="i3" name="images" />	
             
@@ -57,6 +58,7 @@ const CarouselHeader = () => {
                             {/* <h5 className='hideMinButton'>Get Gmail</h5> */}
                         </div> 
                         <picture>
+                            <source media="(max-width: 500px)" srcSet={carousel1B}/>
                             <source media="(max-width: 1080px)" srcSet={carousel1A}/>
                             <img src={carousel1} alt='caroimage'/>
                         </picture>
